@@ -72,11 +72,11 @@ namespace PBS_NTP_Proje
                 prs.DOGYERI = txtCountry.Text;
                 dbPersonel.PersonelSil(prs);
             }
-            catch (FormatException ex) // Format Hatası olduğunda hata verir.
+            catch (FormatException) // Format Hatası olduğunda hata verir.
             {
                 MessageBox.Show("Lütfen doğru formatta veri giriniz.", "Hata", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
-            catch (OverflowException ex) //Değişken sınırları dışına çıktıgında hata verir
+            catch (OverflowException) //Değişken sınırları dışına çıktıgında hata verir
             {
                 MessageBox.Show("Değişken sınırları dışına çıktınız.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
